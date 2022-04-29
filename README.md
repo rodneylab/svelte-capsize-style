@@ -21,7 +21,7 @@ If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
 git clone https://github.com/rodneylab/svelte-capsize-style.git
-cd svelte-each
+cd svelte-capsize-style
 pnpm install # or npm install
 pnpm run dev
 ```
