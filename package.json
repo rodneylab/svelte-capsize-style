@@ -1,6 +1,8 @@
 {
   "name": "svelte-capsize-style",
   "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "description": "Svelte Capsize styling: how you can use the Capsize typography tooling with SvelteKit to layout text predictably in your ❤️ Svelte app.",
   "scripts": {
     "dev": "svelte-kit dev --port 3030",
     "build": "svelte-kit build",
@@ -39,5 +41,12 @@
     "svelte-check": "^2.2.6",
     "typescript": "~4.6.2"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/svelte-capsize-styling"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/svelte-capsize-styling/issues"
+  }
 }
