@@ -4,10 +4,10 @@
   "license": "BSD-3-Clause",
   "description": "Svelte Capsize styling: how you can use the Capsize typography tooling with SvelteKit to layout text predictably in your ❤️ Svelte app.",
   "scripts": {
-    "dev": "svelte-kit dev --port 3030",
-    "build": "svelte-kit build",
+    "dev": "vite dev",
+    "build": "vite build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
+    "preview": "vite preview",
     "prepare": "svelte-kit sync",
     "check": "svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
@@ -19,27 +19,29 @@
   },
   "devDependencies": {
     "@capsizecss/core": "^3.0.0",
-    "@capsizecss/metrics": "^0.2.0",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@fontsource/abril-fatface": "^4.5.7",
-    "@fontsource/courier-prime": "^4.5.7",
-    "@playwright/test": "^1.22.2",
+    "@capsizecss/metrics": "^0.3.0",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@fontsource/abril-fatface": "^4.5.8",
+    "@fontsource/courier-prime": "^4.5.8",
+    "@playwright/test": "^1.25.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "commitlint": "^17.0.3",
     "courierPrime": "link:@capsizecss/metrics/courierPrime",
-    "eslint": "^8.17.0",
+    "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "husky": "^8.0.1",
-    "postcss-html": "^1.4.1",
+    "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
-    "stylelint": "^14.9.1",
-    "stylelint-config-recommended": "^8.0.0",
-    "stylelint-config-standard": "^26.0.0",
-    "svelte": "^3.48.0",
-    "svelte-check": "^2.7.2",
-    "typescript": "~4.7.3"
+    "stylelint": "^14.10.0",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-standard": "^27.0.0",
+    "svelte": "^3.49.0",
+    "svelte-check": "^2.8.0",
+    "typescript": "~4.7.4",
+    "vite": "^3.0.6"
   },
   "type": "module",
   "repository": {
@@ -48,5 +50,8 @@
   },
   "bugs": {
     "url": "https://github.com/rodneylab/svelte-capsize-styling/issues"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.6"
   }
 }
