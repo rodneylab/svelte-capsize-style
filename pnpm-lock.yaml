@@ -42,9 +42,6 @@ importers:
       commitlint:
         specifier: ^19.3.0
         version: 19.3.0(@types/node@20.5.1)(typescript@5.4.5)
-      courierPrime:
-        specifier: link:@capsizecss/metrics/courierPrime
-        version: link:@capsizecss/metrics/courierPrime
       eslint:
         specifier: ^9.1.1
         version: 9.1.1
