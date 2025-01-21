@@ -1,13 +1,13 @@
 <script>
 	import capsizeStyles from '$lib/shared/actions/styles';
 	import { createStyleObject } from '@capsizecss/core';
+	/** @ts-ignore */
 	import courierPrimeMetrics from '@capsizecss/metrics/courierPrime';
 
-	/** @type {number} */
-	export let capHeight;
+	/** @import {Snippet} from 'svelte' */
 
-	/** @type {boolean} */
-	export let withCapsize;
+	/** @type {{capHeight: number; withCapsize: boolean; children: Snippet}} */
+	let { capHeight, withCapsize, children } = $props();
 
 	const styles = createStyleObject({
 		capHeight,
@@ -22,12 +22,14 @@
 
 {#if withCapsize}
 	<span use:capsizeStyles={styles} class="container">
-		<div class="line with-capsize-line"><slot /></div>
+		<div class="line with-capsize-line">
+			{@render children?.()}
+		</div>
 	</span>
 {:else}
 	<span class="container">
 		<div style:font-size={fontSize} class="line">
-			<slot />
+			{@render children?.()}
 		</div>
 	</span>
 {/if}
