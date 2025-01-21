@@ -1,8 +1,8 @@
 <script>
 	import Line from '$lib/components/Line.svelte';
 
-	/** @type {boolean} */
-	export let withCapsize;
+	/** @type {{withCapsize: boolean}} */
+	let { withCapsize } = $props();
 
 	const capHeights = [16, 20, 25, 31, 39, 48, 61];
 </script>
