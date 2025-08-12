@@ -1,7 +1,7 @@
 <script>
 	import capsizeStyles from '$lib/shared/actions/styles';
 	import { createStyleObject } from '@capsizecss/core';
-	/** @ts-ignore */
+	/** @ts-expect-error svelte-check flags error on import path */
 	import courierPrimeMetrics from '@capsizecss/metrics/courierPrime';
 
 	/** @import {Snippet} from 'svelte' */
